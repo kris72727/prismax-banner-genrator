@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Prisma X Banner Generator</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+
+<body>
+
+<!-- Logo Top Left -->
+<img src="logo.png" class="site-logo">
+
+<div class="banner-wrapper">
+  <div class="banner" id="banner">
+
+    <img src="banner-bg.png" class="banner-bg">
+
+    <!-- LEFT PFP BOX -->
+    <div class="pfp-frame">
+      <img id="pfpPreview">
+    </div>
+
+  </div>
+</div>
+
+<div class="controls">
+  <label class="upload-btn">
+    Upload PFP
+    <input type="file" id="upload" accept="image/*" hidden>
+  </label>
+
+  <button class="download-btn" onclick="downloadBanner()">
+    Download Banner
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
